@@ -89,7 +89,7 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="hero-content" id="heroContent">
           <div className="hero-badge" id="heroBadge">
-            🛡️ Elite Cybersecurity Club
+            Elite Cybersecurity Club
           </div>
           
           <h1 className="hero-title" id="heroTitle">
@@ -156,7 +156,7 @@ const HeroSection = () => {
           
           <div className="hero-actions" id="heroActions">
             <Link to="/roadmap" className="cyber-button roadmap-cta" data-text="START LEARNING">
-              <span className="btn-text">🗺️ START LEARNING</span>
+              <span className="btn-text">START LEARNING</span>
               <div className="btn-overlay"></div>
             </Link>
             <div className="cyber-button" data-text="GET FREE THING" onClick={handleGetFreeThing}>
@@ -167,8 +167,7 @@ const HeroSection = () => {
         </div>
         
         <div className="hero-visual" id="heroVisual">
-          {!isMobile && (
-            <div className="hero-terminal" id="heroTerminal">
+          <div className="hero-terminal" id="heroTerminal">
               <div className="terminal-header">
                 <div className="terminal-dot dot-red"></div>
                 <div className="terminal-dot dot-yellow"></div>
@@ -200,7 +199,6 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-          )}
           
           {/* Security stats - Only show on desktop */}
           {!isMobile && (
