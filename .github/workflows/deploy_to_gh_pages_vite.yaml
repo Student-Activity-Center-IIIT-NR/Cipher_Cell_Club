@@ -1,32 +1,27 @@
-name: Deploy Vite site to Pages
+name: Deploy to GitHub Pages (Vite)
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["prod/iiitnr"]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -44,28 +39,30 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-          
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-          
+
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-        
+
       - name: Build with Vite
         run: ${{ steps.detect-package-manager.outputs.runner }} vite build --base=/ --outDir=dist
-        
+
+      - name: Add 404.html fallback
+        run: cp dist/index.html dist/404.html
+
       - name: Add CNAME for custom domain
-        run: echo "ciphercell.iiitnr.ac.in" > ./dist/CNAME
-        
+        run: echo "mun.iiitnr.ac.in" > ./dist/CNAME
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
