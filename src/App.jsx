@@ -378,8 +378,10 @@ const HomePage = () => {
           <div className="website-attribution">
             <h3 className="section-subtitle-small">Website Made By</h3>
             <div className="attribution-team-card">
-              <div className="web-dev-icon">💻</div>
-              <h3 className="team-name">Web Development Team</h3>
+              <div className="team-image-container">
+                <img src="/webdev.png" alt="Web Development Team" className="team-image" />
+              </div>
+              <h3 className="team-name">The Dev Club</h3>
               <div className="team-position">CIPHERCELL DEVELOPERS</div>
               <p className="attribution-text">Crafted with security and innovation in mind</p>
             </div>
