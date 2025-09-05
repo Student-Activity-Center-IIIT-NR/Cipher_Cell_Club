@@ -1,0 +1,36 @@
+{
+	"leadership": [
+		{
+			"name": "Pranjal Pathak",
+			"position": "HEAD",
+			"image": "/pranjal.jpg"
+		},
+		{
+			"name": "Atharva Bedekar",
+			"position": "VICE HEAD",
+			"image": "/atharva.jpg"
+		}
+	],
+	"coreMembers": [
+		{
+			"name": "Mayank Dixit",
+			"position": "CORE MEMBER",
+			"image": "/mayank.jpg"
+		},
+		{
+			"name": "Fahmin K Mohamad",
+			"position": "CORE MEMBER",
+			"image": "/fahmin.jpg"
+		},
+		{
+			"name": "Prashil Thul",
+			"position": "CORE MEMBER",
+			"image": "/prashil.png"
+		},
+		{
+			"name": "Aditi Joshi",
+			"position": "CORE MEMBER",
+			"image": "/member4.jpg"
+		}
+	]
+}
