@@ -329,10 +329,10 @@ const HeroSection = () => {
               <span className="btn-text">START LEARNING</span>
               <div className="btn-overlay"></div>
             </Link>
-            <div className="cyber-button" data-text="GET FREE THING" onClick={handleGetFreeThing}>
+            {/* <div className="cyber-button" data-text="GET FREE THING" onClick={handleGetFreeThing}>
               <span className="btn-text">GET FREE THING</span>
               <div className="btn-overlay"></div>
-            </div>
+            </div> */}
           </div>
         </div>
         
