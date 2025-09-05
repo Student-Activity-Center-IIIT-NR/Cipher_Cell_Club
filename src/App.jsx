@@ -219,7 +219,7 @@ const HomePage = () => {
 				<div className="section-inner">
 					<h2 className="section-title">Workshops</h2>
 					<p className="section-subtitle">
-						Explore our cybersecurity workshops and learning sessions
+						Explore CTF Events happening across globe
 					</p>
 
 					<BentoGridDemo />
