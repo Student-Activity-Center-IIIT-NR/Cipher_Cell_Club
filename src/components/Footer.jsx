@@ -58,7 +58,7 @@ const Footer = () => {
 							<h1 className="footer-heading">
 								Let&lsquo;s secure the digital world together
 							</h1>
-							<div className="newsletter-section">
+							{/* <div className="newsletter-section">
 								<p className="newsletter-text">
 									Join our cybersecurity community*
 								</p>
@@ -92,7 +92,7 @@ const Footer = () => {
 										</button>
 									</form>
 								</div>
-							</div>
+							</div> */}
 						</div>
 
 						<div className="footer-right">
@@ -138,11 +138,6 @@ const Footer = () => {
 											className="social-link"
 										>
 											Discord
-										</a>
-									</li>
-									<li className="link-item">
-										<a href="#" target="_blank" className="social-link">
-											GitHub
 										</a>
 									</li>
 								</ul>
