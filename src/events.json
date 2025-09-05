@@ -1,0 +1,46 @@
+{
+	"events": [
+		{
+			"title": "CTF Championship 2024",
+			"date": "March 15, 2024",
+			"description": "Annual capture the flag competition",
+			"image": "https://picsum.photos/400/250?random=1"
+		},
+		{
+			"title": "Security Workshop",
+			"date": "February 20, 2024",
+			"description": "Penetration testing workshop",
+			"image": "https://picsum.photos/400/250?random=2"
+		},
+		{
+			"title": "Blockchain Security Seminar",
+			"date": "January 10, 2024",
+			"description": "Smart contract security deep dive",
+			"image": "https://picsum.photos/400/250?random=3"
+		},
+		{
+			"title": "Malware Analysis Workshop",
+			"date": "December 5, 2023",
+			"description": "Reverse engineering workshop",
+			"image": "https://picsum.photos/400/250?random=4"
+		},
+		{
+			"title": "Network Security Bootcamp",
+			"date": "November 18, 2023",
+			"description": "Network security training",
+			"image": "https://picsum.photos/400/250?random=5"
+		},
+		{
+			"title": "Web Security Fundamentals",
+			"date": "October 12, 2023",
+			"description": "Web application security basics",
+			"image": "https://picsum.photos/400/250?random=6"
+		},
+		{
+			"title": "Digital Forensics Lab",
+			"date": "September 8, 2023",
+			"description": "Digital investigation techniques",
+			"image": "https://picsum.photos/400/250?random=7"
+		}
+	]
+}

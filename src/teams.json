@@ -1,0 +1,36 @@
+{
+	"leadership": [
+		{
+			"name": "Pranjal",
+			"position": "HEAD",
+			"image": "/atharrrv.jpg"
+		},
+		{
+			"name": "Atharv",
+			"position": "VICE HEAD",
+			"image": "/mayank.jpg"
+		}
+	],
+	"coreMembers": [
+		{
+			"name": "Member 1",
+			"position": "CORE MEMBER",
+			"image": "/mayank.jpg"
+		},
+		{
+			"name": "Member 2",
+			"position": "CORE MEMBER",
+			"image": "/fahmin.jpg"
+		},
+		{
+			"name": "Member 3",
+			"position": "CORE MEMBER",
+			"image": "/prashil.png"
+		},
+		{
+			"name": "Member 4",
+			"position": "CORE MEMBER",
+			"image": "/member4.jpg"
+		}
+	]
+}
