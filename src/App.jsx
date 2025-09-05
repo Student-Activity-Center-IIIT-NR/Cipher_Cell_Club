@@ -201,7 +201,7 @@ const HomePage = () => {
         </div>
 
         <div className="section-inner">
-          <h2 className="section-title">Events Gallery</h2>
+          <h2 className="section-title">CTF Events</h2>
           <p className="section-subtitle">Explore our cybersecurity events and activities through images</p>
 
           <div className="events-carousel-container">
@@ -357,63 +357,73 @@ const HomePage = () => {
           <h2 className="section-title">Our Team</h2>
           <p className="section-subtitle">Meet the cybersecurity experts driving innovation</p>
 
-          {/* Leadership Cards */}
-          <div className="leadership-grid">
-            <div className="leader-card">
-              <div className="leader-avatar">👨‍💻</div>
-              <h3>Head</h3>
-              <h4>Chief Security Officer</h4>
-              <p>Leading cybersecurity initiatives and strategic planning for the club's future.</p>
-            </div>
-            <div className="leader-card">
-              <div className="leader-avatar">👩‍💻</div>
-              <h3>Vice Head</h3>
-              <h4>Technical Director</h4>
-              <p>Overseeing technical operations and mentoring team members in advanced security practices.</p>
+          {/* Leadership */}
+          <div className="leadership-section">
+            <h3 className="section-subtitle-small">Leadership</h3>
+            <div className="leadership-cards">
+              <div className="team-card leadership-card">
+                <div className="team-image-container">
+                  <img src="/atharrrv.jpg" alt="Atharv" className="team-image" />
+                </div>
+                <h3 className="team-name">Atharv</h3>
+                <div className="team-position">HEAD</div>
+              </div>
+              <div className="team-card leadership-card">
+                <div className="team-image-container">
+                  <img src="/mayank.jpg" alt="Mayank" className="team-image" />
+                </div>
+                <h3 className="team-name">Mayank</h3>
+                <div className="team-position">VICE HEAD</div>
+              </div>
             </div>
           </div>
 
-          {/* Team Members Grid */}
-          <div className="team-members-grid">
-            <div className="team-member-card">
-              <div className="member-avatar">🔍</div>
-              <h4>Security Analyst</h4>
-              <p>Penetration testing specialist</p>
-            </div>
-            <div className="team-member-card">
-              <div className="member-avatar">🛡️</div>
-              <h4>Incident Responder</h4>
-              <p>Threat detection expert</p>
-            </div>
-            <div className="team-member-card">
-              <div className="member-avatar">⛓️</div>
-              <h4>Blockchain Developer</h4>
-              <p>Smart contract auditor</p>
-            </div>
-            <div className="team-member-card">
-              <div className="member-avatar">🔐</div>
-              <h4>Cryptography Expert</h4>
-              <p>Encryption specialist</p>
-            </div>
-            <div className="team-member-card">
-              <div className="member-avatar">🎯</div>
-              <h4>Red Team Operator</h4>
-              <p>Offensive security specialist</p>
-            </div>
-            <div className="team-member-card">
-              <div className="member-avatar">🔬</div>
-              <h4>Security Researcher</h4>
-              <p>Vulnerability research</p>
+          {/* Core Members */}
+          <div className="core-members-section">
+            <h3 className="section-subtitle-small">Core Members</h3>
+            <div className="core-members-grid">
+              <div className="team-card core-card">
+                <div className="team-image-container">
+                  <div className="placeholder-avatar">👨‍💻</div>
+                </div>
+                <h3 className="team-name">Member 1</h3>
+                <div className="team-position">CORE MEMBER</div>
+              </div>
+              <div className="team-card core-card">
+                <div className="team-image-container">
+                  <div className="placeholder-avatar">👩‍💻</div>
+                </div>
+                <h3 className="team-name">Member 2</h3>
+                <div className="team-position">CORE MEMBER</div>
+              </div>
+              <div className="team-card core-card">
+                <div className="team-image-container">
+                  <div className="placeholder-avatar">🔒</div>
+                </div>
+                <h3 className="team-name">Member 3</h3>
+                <div className="team-position">CORE MEMBER</div>
+              </div>
+              <div className="team-card core-card">
+                <div className="team-image-container">
+                  <div className="placeholder-avatar">🛡️</div>
+                </div>
+                <h3 className="team-name">Member 4</h3>
+                <div className="team-position">CORE MEMBER</div>
+              </div>
             </div>
           </div>
 
           {/* Website Attribution */}
-          <div className="attribution-card">
-            <div className="attribution-icon">💻</div>
-            <h4>Website Made By</h4>
-            <p>CipherCell Development Team</p>
-            <span>Crafted with security and innovation in mind</span>
+          <div className="website-attribution">
+            <h3 className="section-subtitle-small">Website Made By</h3>
+            <div className="attribution-team-card">
+              <div className="web-dev-icon">💻</div>
+              <h3 className="team-name">Web Development Team</h3>
+              <div className="team-position">CIPHERCELL DEVELOPERS</div>
+              <p className="attribution-text">Crafted with security and innovation in mind</p>
+            </div>
           </div>
+
         </div>
 
         {!isMobile && (
