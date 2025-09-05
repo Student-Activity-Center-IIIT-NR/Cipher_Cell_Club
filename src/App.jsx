@@ -217,7 +217,7 @@ const HomePage = () => {
 				</div>
 
 				<div className="section-inner">
-					<h2 className="section-title">Workshop</h2>
+					<h2 className="section-title">Workshops</h2>
 					<p className="section-subtitle">
 						Explore our cybersecurity workshops and learning sessions
 					</p>
