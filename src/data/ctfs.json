@@ -1,0 +1,109 @@
+{
+    "events": [
+        {
+            "title": "ImaginaryCTF 2025",
+            "date": "September 5-7, 2025",
+            "description": "Annual CTF event",
+            "image": "https://picsum.photos/400/250?random=1",
+            "url": "https://2025.imaginaryctf.org/"
+        },
+        {
+            "title": "CRACCON 2025",
+            "date": "September 6-7, 2025",
+            "description": "Competitive CTF battleground",
+            "image": "https://picsum.photos/400/250?random=2",
+            "url": "https://defhawk.com/battleground/raid/craccon-ctf"
+        },
+        {
+            "title": "ASIS CTF Quals 2025",
+            "date": "September 6-7, 2025",
+            "description": "Qualification round for ASIS CTF",
+            "image": "https://picsum.photos/400/250?random=3",
+            "url": "https://asisctf.com/"
+        },
+        {
+            "title": "BlackHat MEA CTF Qualification 2025",
+            "date": "September 7-8, 2025",
+            "description": "BlackHat Middle East & Africa CTF qualifier",
+            "image": "https://picsum.photos/400/250?random=4",
+            "url": "https://blackhatmea.com/capture-the-flag"
+        },
+        {
+            "title": "WatCTF F25",
+            "date": "September 9-11, 2025",
+            "description": "International CTF event",
+            "image": "https://picsum.photos/400/250?random=5",
+            "url": "https://watctf.org/"
+        },
+        {
+            "title": "DefCamp Capture the Flag (D-CTF) 2025 Quals",
+            "date": "September 12-14, 2025",
+            "description": "Qualification round for DefCamp CTF",
+            "image": "https://picsum.photos/400/250?random=6",
+            "url": "https://dctf25-quals.cyber-edu.co/"
+        },
+        {
+            "title": "FortID CTF 2025",
+            "date": "September 12-14, 2025",
+            "description": "FortID Capture the Flag",
+            "image": "https://picsum.photos/400/250?random=7",
+            "url": "https://fortid.ctfd.io/"
+        },
+        {
+            "title": "07CTF",
+            "date": "September 13-14, 2025",
+            "description": "CTF competition hosted online",
+            "image": "https://picsum.photos/400/250?random=8",
+            "url": "https://ctf.0bscuri7y.xyz/"
+        },
+        {
+            "title": "Ctrl+Space CTF Quals",
+            "date": "September 20-21, 2025",
+            "description": "Qualifier round for Ctrl+Space CTF",
+            "image": "https://picsum.photos/400/250?random=9",
+            "url": "https://ctrl-space.gg/"
+        },
+        {
+            "title": "CDCTF 2025",
+            "date": "September 20-21, 2025",
+            "description": "CDCTF 2025 CTF event",
+            "image": "https://picsum.photos/400/250?random=10",
+            "url": "https://uacrimsondefense.github.io/cdctf.html"
+        },
+        {
+            "title": "FAUST CTF 2025",
+            "date": "September 27, 2025",
+            "description": "Single-day CTF competition",
+            "image": "https://picsum.photos/400/250?random=11",
+            "url": "https://2025.faustctf.net/"
+        },
+        {
+            "title": "jailCTF 2025",
+            "date": "October 3-6, 2025",
+            "description": "Multi-day CTF challenge",
+            "image": "https://picsum.photos/400/250?random=12",
+            "url": "https://ctf.pyjail.club/"
+        },
+        {
+            "title": "Securinets CTF Quals 2025",
+            "date": "October 4-5, 2025",
+            "description": "Qualifier for Securinets CTF",
+            "image": "https://picsum.photos/400/250?random=13",
+            "url": "https://ctf.securinets.tn/"
+        },
+        {
+            "title": "Standoff Cyberbattle 16",
+            "date": "October 6-8, 2025",
+            "description": "International cyber battle event",
+            "image": "https://picsum.photos/400/250?random=14",
+            "url": "https://16.standoff365.com/en/"
+        },
+        {
+            "title": "RSTCON 2025 CTF",
+            "date": "October 24-26, 2025",
+            "description": "RSTCON annual CTF competition",
+            "image": "https://picsum.photos/400/250?random=15",
+            "url": "https://mctf.io/rstcon25"
+        }
+    ]
+}

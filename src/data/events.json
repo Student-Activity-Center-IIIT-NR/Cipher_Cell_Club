@@ -1,0 +1,38 @@
+[
+  {
+    "title": "How to... scam people using blockchain ?",
+    "description": "Learn the core principles of cybersecurity and digital protection.",
+    "date": "October 16th, 2025",
+    "backgroundImage": "/img/events/how-to.jpg"
+  },
+  {
+    "title": "How to... hack IIIT-NR App ?",
+    "description": "Hands-on experience with network security protocols and tools.",
+    "date": "TDB",
+    "backgroundImage": "/img/events/how-to.jpg"
+  },
+  {
+    "title": "How to... TDB ?",
+    "description": "TDB",
+    "date": "TDB",
+    "backgroundImage": "/img/events/how-to.jpg"
+  },
+  {
+    "title": "Cipher Cell Orientation 2025",
+    "description": "Master the art of capture the flag competitions and cybersecurity challenges.",
+    "date": "September 05th, 2025",
+    "backgroundImage": "/img/events/orientation2025.jpg"
+  },
+  {
+    "title": "Cipher Cell Workshop - Introduction to Hacking and CTF",
+    "description": "Explore modern encryption methods and cryptographic algorithms.",
+    "date": "September 20th, 2024",
+    "backgroundImage": "/img/events/workshop2024.jpg"
+  },
+  {
+    "title": "Cipher Cell Orientation 2024",
+    "description": "Learn to investigate and analyze digital evidence and cyber crimes.",
+    "date": "August 28th, 2024",
+    "backgroundImage": "/img/events/orientation2024.jpg"
+  }
+]

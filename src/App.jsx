@@ -14,8 +14,8 @@ import Footer from "./components/Footer.jsx";
 import RoadmapPage from "./components/RoadmapPage.jsx";
 import BentoGridDemo from "./components/bento-grid-demo.jsx";
 import useMobile from "./hooks/useMobile.js";
-import data from "./events.json";
-import teamData from "./teams.json";
+import data from "./data/ctfs.json";
+import teamData from "./data/team.json";
 
 import "./style.css";
 

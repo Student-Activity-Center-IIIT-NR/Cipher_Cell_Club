@@ -122,7 +122,7 @@ const Footer = () => {
 								<ul className="link-group">
 									<li className="link-header">CONNECT</li>
 									<li className="link-item">
-										<a href="#" target="_blank" className="social-link">
+										<a href="https://www.linkedin.com/company/ciphercell/" target="_blank" className="social-link">
 											LinkedIn
 										</a>
 									</li>
