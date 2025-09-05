@@ -171,11 +171,11 @@ const Footer = () => {
 
 					<div className="footer-bottom">
 						<span className="copyright">
-							&copy; 2024 CipherCell. All Rights Reserved.
+							&copy; 2025 CipherCell. All Rights Reserved.
 						</span>
-						<a href="#" className="privacy-link">
+						{/* <a href="#" className="privacy-link">
 							Privacy Policy
-						</a>
+						</a> */}
 					</div>
 				</div>
 

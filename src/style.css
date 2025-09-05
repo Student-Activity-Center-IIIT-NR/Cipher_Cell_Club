@@ -660,7 +660,7 @@ html {
 	padding: 0 2rem;
 	padding-left: calc(80px + 2rem); /* Account for sidebar width + padding */
 	transition: all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-	height: 100vh;
+	/* height: 100vh; */
 	min-height: 100vh;
 }
 
