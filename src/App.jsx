@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection.jsx';
 import MagicBento from './components/MagicBento.jsx';
 import Footer from './components/Footer.jsx';
 import RoadmapPage from './components/RoadmapPage.jsx';
+import BentoGridDemo from './components/bento-grid-demo.jsx';
 import useMobile from './hooks/useMobile.js';
 import './style.css';
 
@@ -285,57 +286,17 @@ const HomePage = () => {
       </div>
 
       {/* CTF Section */}
-      <div id="ctf" className="ctf-section">
+      <div id="ctf" className="workshop-gallery-section">
         <div className="section-background">
           <div className="cyber-grid"></div>
           <div className="gradient-overlay"></div>
         </div>
 
         <div className="section-inner">
-          <h2 className="section-title">CTF Events</h2>
-          <p className="section-subtitle">Competitive cybersecurity challenges and educational workshops</p>
+          <h2 className="section-title">Workshop Gallery</h2>
+          <p className="section-subtitle">Explore our cybersecurity workshops and learning sessions</p>
 
-          <div className="ctf-events-grid">
-            <div className="ctf-event-card" onClick={() => window.open('https://ctftime.org', '_blank')}>
-              <div className="ctf-event-icon">⚔️</div>
-              <h4>Capture The Flag</h4>
-              <p className="ctf-short-desc">Intense competitive hacking challenges</p>
-              <div className="ctf-detailed-desc">
-                <p>Intense competitive hacking challenges covering web security, cryptography, and reverse engineering. Test your skills against the best.</p>
-                <span className="ctf-link-hint">Click to visit CTFTime →</span>
-              </div>
-            </div>
-            
-            <div className="ctf-event-card" onClick={() => window.open('https://picoctf.org', '_blank')}>
-              <div className="ctf-event-icon">🎓</div>
-              <h4>Security Workshops</h4>
-              <p className="ctf-short-desc">Hands-on learning sessions</p>
-              <div className="ctf-detailed-desc">
-                <p>Hands-on learning sessions covering the latest tools, techniques, and methodologies in cybersecurity. From beginner to advanced levels.</p>
-                <span className="ctf-link-hint">Click to visit PicoCTF →</span>
-              </div>
-            </div>
-
-            <div className="ctf-event-card" onClick={() => window.open('https://hackerone.com', '_blank')}>
-              <div className="ctf-event-icon">🌐</div>
-              <h4>Bug Bounty Programs</h4>
-              <p className="ctf-short-desc">Vulnerability hunting programs</p>
-              <div className="ctf-detailed-desc">
-                <p>Collaborative vulnerability hunting programs with rewards for discovering critical security flaws. Make the internet safer while earning rewards.</p>
-                <span className="ctf-link-hint">Click to visit HackerOne →</span>
-              </div>
-            </div>
-
-            <div className="ctf-event-card" onClick={() => window.open('https://owasp.org', '_blank')}>
-              <div className="ctf-event-icon">🤝</div>
-              <h4>Industry Partnerships</h4>
-              <p className="ctf-short-desc">Exclusive events with leading companies</p>
-              <div className="ctf-detailed-desc">
-                <p>Exclusive events with leading cybersecurity companies and government agencies. Network with industry professionals and learn from experts.</p>
-                <span className="ctf-link-hint">Click to visit OWASP →</span>
-              </div>
-            </div>
-          </div>
+          <BentoGridDemo />
         </div>
 
         {!isMobile && (
