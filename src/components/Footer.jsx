@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import { motion, useInView } from "motion/react";
 import "./Footer.css";
+import useMobile from "../hooks/useMobile.js";
 
 const pathArr = [
 	"M55.7447 0H15.3191L0 45.5836H18.2979L4.25532 81.7065H16.5957L5.95745 126L34.4681 82.9966L45.9574 126H120V0H104.681L104.255 110.519H58.2979L45.9574 64.5051H28.0851L42.9787 39.1331L61.7021 106.648H99.5745V0H80V94.6075H76.1702L55.7447 0Z",
@@ -20,6 +21,7 @@ const Footer = () => {
 	const [openPopup, setOpenPopUp] = useState(false);
 	const ref = useRef(null);
 	const isInView = useInView(ref);
+	const isMobile = useMobile();
 
 	const variants = {
 		visible: (i) => ({
@@ -122,12 +124,20 @@ const Footer = () => {
 								<ul className="link-group">
 									<li className="link-header">CONNECT</li>
 									<li className="link-item">
-										<a href="https://www.linkedin.com/company/ciphercell/" target="_blank" className="social-link">
+										<a
+											href="https://www.linkedin.com/company/ciphercell/"
+											target="_blank"
+											className="social-link"
+										>
 											LinkedIn
 										</a>
 									</li>
 									<li className="link-item">
-										<a href="#" target="_blank" className="social-link">
+										<a
+											href="https://x.com/c1ph3rc3ll?t=IhlLw_Sgnhvock9t6FnMTQ&s=08"
+											target="_blank"
+											className="social-link"
+										>
 											Twitter
 										</a>
 									</li>
@@ -186,11 +196,13 @@ const Footer = () => {
 				</div>
 
 				{/* Floating Elements */}
-				<div className="floating-elements">
-					<div className="floating-dot dot-1"></div>
-					<div className="floating-dot dot-2"></div>
-					<div className="floating-dot dot-3"></div>
-				</div>
+				{!isMobile && (
+					<div className="floating-elements">
+						<div className="floating-dot dot-1"></div>
+						<div className="floating-dot dot-2"></div>
+						<div className="floating-dot dot-3"></div>
+					</div>
+				)}
 			</div>
 
 			{/* Success Popup */}

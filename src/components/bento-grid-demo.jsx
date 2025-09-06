@@ -16,7 +16,7 @@ export default function BentoGridDemo() {
 					date={item.date}
 					// If you want to use icons, you can render them as text or emoji
 					// icon={<span className="h-4 w-4 text-neutral-500">{item.icon}</span>}
-					className={`${i === 3 || i === 6 ? "col-span-2" : ""}`}
+					className={`${i === 3 || i === 6 ? "col-span-2" : "col-span-1"}`}
 					backgroundImage={item.backgroundImage}
 					style={{
 						backgroundImage: `url(${item.backgroundImage})`,

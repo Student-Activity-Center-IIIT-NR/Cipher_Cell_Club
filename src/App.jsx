@@ -375,10 +375,10 @@ const HomePage = () => {
 
 			{/* Tools Section */}
 			<div id="services" className="tools-section">
-				<div className="section-background">
+				{/* <div className="section-background">
 					<div className="cyber-grid"></div>
 					<div className="gradient-overlay"></div>
-				</div>
+				</div> */}
 
 				<div className="section-inner">
 					<h2 className="section-title">Security Tools</h2>

@@ -42,6 +42,11 @@
 @media (max-width: 767px) {
 	.bento-grid-item.col-span-2 {
 		grid-column: span 1;
+		min-height: 18rem;
+	}
+	.bento-grid-item.col-span-1 {
+		grid-column: span 1;
+		min-height: 18rem;
 	}
 }
 
@@ -98,7 +103,7 @@
 }
 
 .workshop-gallery-section .section-inner {
-	padding-left: calc(60px + 2rem);
+	padding-left: calc(60px);
 	padding-right: 4rem;
 	max-width: 1800px;
 	margin: 0 auto;
@@ -106,14 +111,14 @@
 
 @media (max-width: 1024px) {
 	.workshop-gallery-section .section-inner {
-		padding-left: calc(60px + 3rem);
+		padding-left: calc(60px);
 		padding-right: 3rem;
 	}
 }
 
 @media (max-width: 768px) {
 	.workshop-gallery-section .section-inner {
-		padding-left: calc(50px + 2rem);
+		padding-left: calc(50px + 1rem);
 		padding-right: 2rem;
 	}
 
