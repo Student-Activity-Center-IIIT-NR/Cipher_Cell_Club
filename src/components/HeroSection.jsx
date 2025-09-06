@@ -259,7 +259,7 @@ const HeroSection = () => {
       <div className="hero-container">
         <div className="hero-content" id="heroContent">
           <div className="hero-badge" id="heroBadge">
-            Elite Cybersecurity Club
+            IIIT-NR's Info Sec Club
           </div>
           
           <h1 className="hero-title" id="heroTitle">
@@ -462,7 +462,7 @@ const HeroSection = () => {
                   <div className="data-label">Screen Resolution</div>
                 </div>
 
-                <div className="data-item">
+                {/* <div className="data-item">
                   <div className="data-value">
                     {shouldStartAnimations ? (
                       <DecryptedText
@@ -480,9 +480,9 @@ const HeroSection = () => {
                     )}
                   </div>
                   <div className="data-label">Timezone</div>
-                </div>
+                </div> */}
 
-                <div className="data-item">
+                {/* <div className="data-item">
                   <div className="data-value">
                     {shouldStartAnimations ? (
                       <DecryptedText
@@ -500,7 +500,7 @@ const HeroSection = () => {
                     )}
                   </div>
                   <div className="data-label">Language</div>
-                </div>
+                </div> */}
 
                 <div className="data-item">
                   <div className="data-value">
@@ -543,7 +543,7 @@ const HeroSection = () => {
                 </div>
 
 
-                <div className="data-item tracking-status">
+                {/* <div className="data-item tracking-status">
                   <div className="data-value">
                     {shouldStartAnimations ? (
                       <DecryptedText
@@ -561,7 +561,7 @@ const HeroSection = () => {
                     )}
                   </div>
                   <div className="data-label">Privacy Status</div>
-                </div>
+                </div> */}
               </div>
 
               <div className="data-warning">

@@ -11,7 +11,16 @@ export const BentoGridItem = ({
 }) => {
 	return (
 		<div className={`bento-grid-item ${className}`} style={style}>
-			<div className="bento-content">
+			<div
+				className="bento-content"
+				style={{
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "flex-end",
+					height: "100%",
+					padding: "0rem",
+				}}
+			>
 				<div className="bento-title">{title}</div>
 				{/* <div className="bento-description">{description}</div> */}
 				<div className="bento-description">{date}</div>

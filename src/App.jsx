@@ -91,7 +91,7 @@ const Navigation = () => {
 						<a href="#events" onClick={(e) => handleSmoothScroll(e, "#events")}>
 							<span className="nav-icon">📅</span>
 						</a>
-						<div className="nav-tooltip">Events Gallery</div>
+						<div className="nav-tooltip">Workshops</div>
 					</li>
 					<li className="nav-item">
 						<a href="#ctf" onClick={(e) => handleSmoothScroll(e, "#ctf")}>
@@ -219,7 +219,7 @@ const HomePage = () => {
 				<div className="section-inner">
 					<h2 className="section-title">Workshops</h2>
 					<p className="section-subtitle">
-						Explore our cybersecurity workshops and learning sessions
+						Explore CTF Events happening across globe
 					</p>
 
 					<BentoGridDemo />
