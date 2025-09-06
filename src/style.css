@@ -3201,7 +3201,9 @@ html {
 .leadership-cards {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 3rem;
+	margin: 0 auto;
 	margin-bottom: 4rem;
 }
 
@@ -3250,7 +3252,7 @@ html {
 }
 
 .leadership-card {
-	max-width: 480px;
+	max-width: 450px;
 	min-width: 300px;
 	padding: 1.5rem;
 	min-height: 400px;
@@ -3341,12 +3343,12 @@ html {
 
 	.team-card {
 		max-width: 300px;
-		padding: 2rem;
+		/* padding: 2rem; */
 	}
 
 	.leadership-card {
-		max-width: 320px;
-		padding: 2.5rem;
+		max-width: 300px;
+		/* padding: 2rem; */
 	}
 }
 
@@ -3597,7 +3599,7 @@ html {
 	.team-section,
 	.tools-section {
 		padding: 2rem 1rem;
-		padding-left: calc(60px + 1rem); /* Account for tablet sidebar width */
+		padding-left: calc(50px); /* Account for tablet sidebar width */
 	}
 
 	.simple-team-grid {
@@ -3624,7 +3626,7 @@ html {
 	.ctf-section,
 	.team-section,
 	.tools-section {
-		padding-left: calc(50px + 0.5rem); /* Account for mobile sidebar width */
+		padding-left: calc(50px + 1rem); /* Account for mobile sidebar width */
 	}
 
 	.team-members-grid {
