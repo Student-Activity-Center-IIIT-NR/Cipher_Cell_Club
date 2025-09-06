@@ -249,12 +249,14 @@ const HomePage = () => {
 					<div className="events-carousel-container">
 						<div className="events-carousel">
 							{data.events.map((event, index) => (
-								<div
+								<Link
 									className="event-slide"
 									key={index}
 									data-event={event.title}
 									data-date={event.date}
 									data-description={event.description}
+									to={event.url}
+									target="_blank"
 								>
 									<img
 										src={event.image}
@@ -266,7 +268,7 @@ const HomePage = () => {
 										<p>{event.date}</p>
 										<span>{event.description}</span>
 									</div>
-								</div>
+								</Link>
 							))}
 						</div>
 						<div className="carousel-indicators">
