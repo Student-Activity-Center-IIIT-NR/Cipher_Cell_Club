@@ -140,7 +140,7 @@ const Footer = () => {
 									</li>
 									<li className="link-item">
 										<a
-											href="https://discord.gg/Bh9N22Vx"
+											href="https://discord.gg/ukRsasGK6h"
 											target="_blank"
 											className="social-link"
 										>
