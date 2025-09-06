@@ -10,10 +10,9 @@ const LoadingScreen = ({ onComplete }) => {
 
 	useEffect(() => {
 		const timeline = [
-			{ delay: 2000, phase: "transforming" },
-			{ delay: 3000, phase: "building" },
-			{ delay: 4000, phase: "typing" },
-			{ delay: 6500, phase: "complete" },
+			{ delay: 500, phase: "transforming" },
+			{ delay: 1000, phase: "typing" },
+			{ delay: 2500, phase: "complete" },
 		];
 
 		timeline.forEach(({ delay, phase: nextPhase }) => {
@@ -37,7 +36,7 @@ const LoadingScreen = ({ onComplete }) => {
 			}, 150);
 		};
 
-		setTimeout(startTyping, 4000);
+		setTimeout(startTyping, 1500);
 
 		// Complete animation and fade out
 		setTimeout(() => {
@@ -45,7 +44,7 @@ const LoadingScreen = ({ onComplete }) => {
 			setTimeout(() => {
 				onComplete?.();
 			}, 1000);
-		}, 7500);
+		}, 4500);
 
 		return () => {
 			if (typingTimer) clearInterval(typingTimer);
@@ -97,13 +96,13 @@ const LoadingScreen = ({ onComplete }) => {
 							|
 						</span>
 					</div>
-					<div className={`subtitle ${phase === "complete" ? "visible" : ""}`}>
+					<div className={`subtitle ${phase === "typing" || phase === "complete" ? "visible" : ""}`}>
 						IIIT-NR INFOSEC CLUB
 					</div>
 				</div>
 
 				{/* Loading Dots */}
-				<div className={`loading-dots ${phase === "complete" ? "hide" : ""}`}>
+				<div className={`loading-dots ${phase === "typing" || phase === "complete" ? "hide" : ""}`}>
 					<div className="dot" />
 					<div className="dot" />
 					<div className="dot" />
