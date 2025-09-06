@@ -100,7 +100,7 @@ const LoadingScreen = ({ onComplete }) => {
 					</div>
 					<div
 						className={`subtitle ${
-							phase === "typing" || phase === "complete" ? "visible" : ""
+							phase === "complete" ? "visible" : ""
 						}`}
 					>
 						IIIT-NR INFOSEC CLUB
@@ -110,7 +110,7 @@ const LoadingScreen = ({ onComplete }) => {
 				{/* Loading Dots */}
 				<div
 					className={`loading-dots ${
-						phase === "typing" || phase === "complete" ? "hide" : ""
+						phase === "transforming" || phase === "typing" || phase === "complete" ? "hide" : ""
 					}`}
 				>
 					<div className="dot" />
