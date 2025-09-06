@@ -10,7 +10,9 @@ const LoadingScreen = ({ onComplete }) => {
 
 	useEffect(() => {
 		const timeline = [
-			{ delay: 500, phase: "transforming" },
+			{ delay: 1500, phase: "transforming" },
+			// { delay: 3000, phase: "building" },
+
 			{ delay: 1000, phase: "typing" },
 			{ delay: 2500, phase: "complete" },
 		];
@@ -96,13 +98,21 @@ const LoadingScreen = ({ onComplete }) => {
 							|
 						</span>
 					</div>
-					<div className={`subtitle ${phase === "typing" || phase === "complete" ? "visible" : ""}`}>
+					<div
+						className={`subtitle ${
+							phase === "typing" || phase === "complete" ? "visible" : ""
+						}`}
+					>
 						IIIT-NR INFOSEC CLUB
 					</div>
 				</div>
 
 				{/* Loading Dots */}
-				<div className={`loading-dots ${phase === "typing" || phase === "complete" ? "hide" : ""}`}>
+				<div
+					className={`loading-dots ${
+						phase === "typing" || phase === "complete" ? "hide" : ""
+					}`}
+				>
 					<div className="dot" />
 					<div className="dot" />
 					<div className="dot" />
