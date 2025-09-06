@@ -105,13 +105,10 @@ const Footer = () => {
 										<a href="#hero">Home</a>
 									</li>
 									<li className="link-item">
-										<a href="#about">About</a>
+										<a href="#events">Workshops</a>
 									</li>
 									<li className="link-item">
-										<a href="#services">Services</a>
-									</li>
-									<li className="link-item">
-										<a href="#events">Events</a>
+										<a href="#ctf">CTF Events</a>
 									</li>
 									<li className="link-item">
 										<a href="#team">Team</a>

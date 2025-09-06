@@ -96,14 +96,14 @@
 
 /* Workshop Gallery Section Styles */
 .workshop-gallery-section {
-	padding: 4rem 0;
+	padding: 4rem 0rem;
 	position: relative;
 	min-height: auto;
 	background: var(--bg-primary);
 }
 
 .workshop-gallery-section .section-inner {
-	padding-left: calc(60px);
+	padding-left: calc(80px + 2rem);
 	padding-right: 4rem;
 	max-width: 1800px;
 	margin: 0 auto;
@@ -111,7 +111,7 @@
 
 @media (max-width: 1024px) {
 	.workshop-gallery-section .section-inner {
-		padding-left: calc(60px);
+		padding-left: calc(60px+ 2rem);
 		padding-right: 3rem;
 	}
 }
