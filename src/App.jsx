@@ -346,6 +346,27 @@ const HomePage = () => {
 							))}
 						</div>
 					</div>
+					<div className="core-members-section">
+						<h3 className="section-subtitle-small">Senior Members</h3>
+						<div className="core-members-grid">
+							{teamData.seniorMembers.map((member, index) => (
+								<div className="team-card core-card" key={index}>
+									<div className="team-image-container">
+										{/* <div className="placeholder-avatar">{member.avatar}</div> */}
+										<div className="team-image-container">
+											<img
+												src={member.image}
+												alt={member.name}
+												className="team-image"
+											/>
+										</div>
+									</div>
+									<h3 className="team-name">{member.name}</h3>
+									<div className="team-position">{member.position}</div>
+								</div>
+							))}
+						</div>
+					</div>
 
 					{/* Website Attribution */}
 					<div className="website-attribution">
