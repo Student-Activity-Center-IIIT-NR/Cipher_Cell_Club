@@ -225,12 +225,10 @@ const HomePage = () => {
 					<BentoGridDemo />
 				</div>
 
-				{!isMobile && (
-					<div className="floating-elements">
-						<div className="floating-dot dot-1"></div>
-						<div className="floating-dot dot-2"></div>
-					</div>
-				)}
+				<div className="floating-elements">
+					<div className="floating-dot dot-1"></div>
+					<div className="floating-dot dot-2"></div>
+				</div>
 			</div>
 
 			{/* Events Section with Image Gallery */}
@@ -398,10 +396,10 @@ const HomePage = () => {
 
 			{/* Tools Section */}
 			<div id="services" className="tools-section">
-				{/* <div className="section-background">
+				<div className="section-background">
 					<div className="cyber-grid"></div>
 					<div className="gradient-overlay"></div>
-				</div> */}
+				</div>
 
 				<div className="section-inner">
 					<h2 className="section-title">Security Tools</h2>
@@ -445,13 +443,11 @@ const HomePage = () => {
 					</div>
 				</div>
 
-				{!isMobile && (
-					<div className="floating-elements">
-						<div className="floating-dot dot-1"></div>
-						<div className="floating-dot dot-2"></div>
-						<div className="floating-dot dot-3"></div>
-					</div>
-				)}
+				<div className="floating-elements">
+					<div className="floating-dot dot-1"></div>
+					<div className="floating-dot dot-2"></div>
+					<div className="floating-dot dot-3"></div>
+				</div>
 			</div>
 
 			{/* Footer */}

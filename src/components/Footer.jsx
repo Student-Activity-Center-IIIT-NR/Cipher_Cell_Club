@@ -193,13 +193,11 @@ const Footer = () => {
 				</div>
 
 				{/* Floating Elements */}
-				{!isMobile && (
-					<div className="floating-elements">
-						<div className="floating-dot dot-1"></div>
-						<div className="floating-dot dot-2"></div>
-						<div className="floating-dot dot-3"></div>
-					</div>
-				)}
+				<div className="floating-elements">
+					<div className="floating-dot dot-1"></div>
+					<div className="floating-dot dot-2"></div>
+					<div className="floating-dot dot-3"></div>
+				</div>
 			</div>
 
 			{/* Success Popup */}

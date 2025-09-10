@@ -115,7 +115,7 @@
 
 .terminal-command {
 	color: var(--accent-cyan);
-	/* animation: terminalBlink 2s infinite; */
+	animation: terminalBlink 2s infinite;
 }
 /* 
 @keyframes terminalBlink {
@@ -155,7 +155,7 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	background-size: 200% 200%;
-	/* animation: titleGradientShift 4s ease-in-out infinite; */
+	animation: titleGradientShift 4s ease-in-out infinite;
 }
 
 .title-sub {
@@ -643,13 +643,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-	/* Mobile Performance Optimizations */
-	.roadmap-page::before,
-	.chapter-card::before,
-	.roadmap-main-btn::before,
-	.terminal-badge {
-		animation: none !important;
-	}
 	.achievements-title {
 		font-size: 1.5rem;
 	}
@@ -692,7 +685,6 @@
 
 	.chapter-card {
 		padding: 1rem;
-		max-height: 200px;
 	}
 
 	.chapter-title {
@@ -742,7 +734,6 @@
 
 	.chapter-card {
 		padding: 0.8rem;
-		max-height: 280px;
 	}
 
 	.chapter-icon {

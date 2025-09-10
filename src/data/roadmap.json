@@ -1,0 +1,242 @@
+[
+   {
+      "id":"fundamentals",
+      "title":"Security Fundamentals",
+      "icon":"🛡️",
+      "color":"#10b981",
+      "estimatedTime":"4-6 weeks",
+      "description":"Master the core concepts of cybersecurity",
+      "topics":[
+         {
+            "id":"intro-cybersec",
+            "title":"Introduction to Cybersecurity",
+            "difficulty":"Beginner"
+         },
+         {
+            "id":"cia-triad",
+            "title":"CIA Triad (Confidentiality, Integrity, Availability)",
+            "difficulty":"Beginner"
+         },
+         {
+            "id":"threat-landscape",
+            "title":"Threat Landscape & Attack Vectors",
+            "difficulty":"Beginner"
+         },
+         {
+            "id":"risk-management",
+            "title":"Risk Assessment & Management",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"security-frameworks",
+            "title":"Security Frameworks (NIST, ISO 27001)",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"compliance-regulations",
+            "title":"Compliance & Regulations (GDPR, HIPAA)",
+            "difficulty":"Intermediate"
+         }
+      ]
+   },
+   {
+      "id":"network-security",
+      "title":"Network Security",
+      "icon":"🌐",
+      "color":"#06b6d4",
+      "estimatedTime":"6-8 weeks",
+      "description":"Secure network infrastructures and protocols",
+      "topics":[
+         {
+            "id":"network-protocols",
+            "title":"Network Protocols & OSI Model",
+            "difficulty":"Beginner"
+         },
+         {
+            "id":"firewalls-ids",
+            "title":"Firewalls & Intrusion Detection Systems",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"vpn-tunneling",
+            "title":"VPN & Secure Tunneling",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"wireless-security",
+            "title":"Wireless Network Security",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"network-monitoring",
+            "title":"Network Monitoring & Analysis",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"ddos-mitigation",
+            "title":"DDoS Attack Prevention & Mitigation",
+            "difficulty":"Advanced"
+         }
+      ]
+   },
+   {
+      "id":"ethical-hacking",
+      "title":"Ethical Hacking & Penetration Testing",
+      "icon":"⚔️",
+      "color":"#4f46e5",
+      "estimatedTime":"8-12 weeks",
+      "description":"Learn to think like an attacker to defend better",
+      "topics":[
+         {
+            "id":"pentest-methodology",
+            "title":"Penetration Testing Methodology",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"reconnaissance",
+            "title":"Information Gathering & Reconnaissance",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"vulnerability-scanning",
+            "title":"Vulnerability Assessment & Scanning",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"web-app-testing",
+            "title":"Web Application Security Testing",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"social-engineering",
+            "title":"Social Engineering & Phishing",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"post-exploitation",
+            "title":"Post-Exploitation & Privilege Escalation",
+            "difficulty":"Expert"
+         }
+      ]
+   },
+   {
+      "id":"cryptography",
+      "title":"Cryptography & PKI",
+      "icon":"🔐",
+      "color":"#dc2626",
+      "estimatedTime":"6-8 weeks",
+      "description":"Master the mathematics of security",
+      "topics":[
+         {
+            "id":"crypto-fundamentals",
+            "title":"Cryptographic Fundamentals",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"symmetric-crypto",
+            "title":"Symmetric Key Cryptography",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"asymmetric-crypto",
+            "title":"Public Key Cryptography",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"digital-signatures",
+            "title":"Digital Signatures & Certificates",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"pki-infrastructure",
+            "title":"Public Key Infrastructure (PKI)",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"blockchain-crypto",
+            "title":"Blockchain & Cryptocurrency Security",
+            "difficulty":"Expert"
+         }
+      ]
+   },
+   {
+      "id":"incident-response",
+      "title":"Incident Response & Forensics",
+      "icon":"🚨",
+      "color":"#ea580c",
+      "estimatedTime":"6-8 weeks",
+      "description":"Handle security incidents and perform digital forensics",
+      "topics":[
+         {
+            "id":"incident-planning",
+            "title":"Incident Response Planning",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"threat-hunting",
+            "title":"Threat Hunting & Detection",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"digital-forensics",
+            "title":"Digital Forensics & Evidence Collection",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"malware-analysis",
+            "title":"Malware Analysis & Reverse Engineering",
+            "difficulty":"Expert"
+         },
+         {
+            "id":"memory-forensics",
+            "title":"Memory & Network Forensics",
+            "difficulty":"Expert"
+         },
+         {
+            "id":"case-documentation",
+            "title":"Legal Aspects & Case Documentation",
+            "difficulty":"Advanced"
+         }
+      ]
+   },
+   {
+      "id":"cloud-security",
+      "title":"Cloud Security",
+      "icon":"☁️",
+      "color":"#7c3aed",
+      "estimatedTime":"5-7 weeks",
+      "description":"Secure cloud environments and services",
+      "topics":[
+         {
+            "id":"cloud-fundamentals",
+            "title":"Cloud Computing Fundamentals",
+            "difficulty":"Beginner"
+         },
+         {
+            "id":"aws-security",
+            "title":"AWS Security Best Practices",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"azure-security",
+            "title":"Azure Security & Compliance",
+            "difficulty":"Intermediate"
+         },
+         {
+            "id":"container-security",
+            "title":"Container & Kubernetes Security",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"serverless-security",
+            "title":"Serverless Security",
+            "difficulty":"Advanced"
+         },
+         {
+            "id":"cloud-forensics",
+            "title":"Cloud Incident Response & Forensics",
+            "difficulty":"Expert"
+         }
+      ]
+   }
+]

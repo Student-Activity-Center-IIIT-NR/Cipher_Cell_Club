@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./LoadingScreen.css";
+import ReverseVideo from "./ReverseVideo";
 const useIsMobile = () => {
 	const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
 
@@ -68,16 +69,9 @@ const LoadingScreen = ({ onComplete }) => {
 	return (
 		<div className={`loading-screen ${!isVisible ? "fade-out" : ""}`}>
 			<div className="loading-container">
-				{isMobile ? (
-					<video
-						className="loading-video"
-						src="loading.mp4"
-						autoPlay
-						muted
-						loop
-						playsInline
-					/>
-				) : (
+				{/* {isMobile ? (
+					<ReverseVideo />
+				) : ( */}
 					<>
 						<div className="circle-container">
 							<div
@@ -112,7 +106,7 @@ const LoadingScreen = ({ onComplete }) => {
 							<div className="dot" />
 						</div>
 					</>
-				)}
+				
 				{/* Circle Animation */}
 				{/* <div className="circle-container">
 					<div
