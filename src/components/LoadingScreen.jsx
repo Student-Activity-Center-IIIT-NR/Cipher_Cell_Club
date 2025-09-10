@@ -1,7 +1,19 @@
 import React, { useState, useEffect } from "react";
 import "./LoadingScreen.css";
+const useIsMobile = () => {
+	const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
+
+	React.useEffect(() => {
+		const handleResize = () => setIsMobile(window.innerWidth < 768);
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
+	}, []);
+
+	return isMobile;
+};
 
 const LoadingScreen = ({ onComplete }) => {
+	const isMobile = useIsMobile();
 	const [phase, setPhase] = useState("spinning"); // spinning, transforming, building, typing, complete
 	const [typedText, setTypedText] = useState("");
 	const [isVisible, setIsVisible] = useState(true);
@@ -56,15 +68,59 @@ const LoadingScreen = ({ onComplete }) => {
 	return (
 		<div className={`loading-screen ${!isVisible ? "fade-out" : ""}`}>
 			<div className="loading-container">
+				{isMobile ? (
+					<video
+						className="loading-video"
+						src="loading.mp4"
+						autoPlay
+						muted
+						loop
+						playsInline
+					/>
+				) : (
+					<>
+						<div className="circle-container">
+							<div
+								className={`outer-circle ${
+									phase !== "spinning" ? "stop-spin" : ""
+								}`}
+							/>
+							<div
+								className={`inner-rings ${
+									["transforming", "building", "typing", "complete"].includes(
+										phase
+									)
+										? "visible"
+										: ""
+								}`}
+							>
+								<div className="ring ring-1" />
+								<div className="ring ring-2" />
+								<div className="ring ring-3" />
+							</div>
+						</div>
+
+						<div
+							className={`loading-dots ${
+								["transforming", "typing", "complete"].includes(phase)
+									? "hide"
+									: ""
+							}`}
+						>
+							<div className="dot" />
+							<div className="dot" />
+							<div className="dot" />
+						</div>
+					</>
+				)}
 				{/* Circle Animation */}
-				<div className="circle-container">
+				{/* <div className="circle-container">
 					<div
 						className={`outer-circle ${
 							phase !== "spinning" ? "stop-spin" : ""
 						}`}
 					/>
 
-					{/* Inner Rings */}
 					<div
 						className={`inner-rings ${
 							phase === "transforming" ||
@@ -79,12 +135,7 @@ const LoadingScreen = ({ onComplete }) => {
 						<div className="ring ring-2" />
 						<div className="ring ring-3" />
 					</div>
-
-					{/* Logo C */}
-					{/* <div className={`logo-c ${phase === 'building' || phase === 'typing' || phase === 'complete' ? 'visible' : ''}`}>
-            C
-          </div> */}
-				</div>
+				</div> */}
 
 				{/* Text */}
 				<div
@@ -98,11 +149,7 @@ const LoadingScreen = ({ onComplete }) => {
 							|
 						</span>
 					</div>
-					<div
-						className={`subtitle ${
-							phase === "complete" ? "visible" : ""
-						}`}
-					>
+					<div className={`subtitle ${phase === "complete" ? "visible" : ""}`}>
 						IIIT-NR INFOSEC CLUB
 					</div>
 				</div>
@@ -110,7 +157,11 @@ const LoadingScreen = ({ onComplete }) => {
 				{/* Loading Dots */}
 				<div
 					className={`loading-dots ${
-						phase === "transforming" || phase === "typing" || phase === "complete" ? "hide" : ""
+						phase === "transforming" ||
+						phase === "typing" ||
+						phase === "complete"
+							? "hide"
+							: ""
 					}`}
 				>
 					<div className="dot" />

@@ -650,6 +650,9 @@
 	.terminal-badge {
 		animation: none !important;
 	}
+	.achievements-title {
+		font-size: 1.5rem;
+	}
 
 	.chapter-card::before {
 		display: none;
@@ -728,6 +731,9 @@
 	.roadmap-container {
 		padding: 0 0.5rem;
 	}
+	.title-sub {
+		font-size: 0.3em;
+	}
 
 	.terminal-badge {
 		font-size: 0.8rem;
@@ -736,7 +742,7 @@
 
 	.chapter-card {
 		padding: 0.8rem;
-		max-height: 160px;
+		max-height: 280px;
 	}
 
 	.chapter-icon {
@@ -773,5 +779,11 @@
 	.topic-status {
 		grid-column: 2;
 		justify-self: end;
+	}
+	.progress-bar::after {
+		animation: none !important;
+	}
+	.roadmap-header::after {
+		animation: none !important;
 	}
 }
