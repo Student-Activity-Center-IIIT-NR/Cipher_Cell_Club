@@ -219,7 +219,7 @@ const HomePage = () => {
 				<div className="section-inner">
 					<h2 className="section-title">Workshops</h2>
 					<p className="section-subtitle">
-						Explore CTF Events happening across globe
+						Explore our cybersecurity events and activities through images
 					</p>
 
 					<BentoGridDemo />
@@ -241,7 +241,7 @@ const HomePage = () => {
 				<div className="section-inner">
 					<h2 className="section-title">CTF Events</h2>
 					<p className="section-subtitle">
-						Explore our cybersecurity events and activities through images
+						Explore CTF Events happening across globe
 					</p>
 
 					<div className="events-carousel-container">
@@ -299,7 +299,7 @@ const HomePage = () => {
 				<div className="section-inner">
 					<h2 className="section-title">Our Team</h2>
 					<p className="section-subtitle">
-						Meet the cybersecurity experts driving innovation
+						Meet the experts and enthusiasts driving innovation in cybersecurity and blockchain.
 					</p>
 
 					{/* Leadership */}
