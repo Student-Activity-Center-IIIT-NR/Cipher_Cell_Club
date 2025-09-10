@@ -1379,17 +1379,11 @@ html {
 
 .typing-cursor {
 	background: var(--accent-green);
-	/* animation: blink 1s infinite; */
+	animation: blink 1s infinite;
 	width: 8px;
 	height: 1rem;
 	display: inline-block;
 	margin-left: 2px;
-}
-
-@media (min-width: 768px) {
-	.typing-cursor {
-		animation: blink 1s infinite;
-	}
 }
 
 @keyframes blink {
@@ -1797,46 +1791,6 @@ html {
 
 /* Mobile Performance Optimizations */
 @media (max-width: 768px) {
-	/* Disable heavy animations on mobile for performance - BUT preserve loading screen */
-	:not(.loading-screen) *,
-	:not(.loading-screen) *::before,
-	:not(.loading-screen) *::after,
-	:not(.circle-container) *,
-	:not(.circle-container) *::before,
-	:not(.circle-container) *::after,
-	:not(.outer-circle) *,
-	:not(.ring-1) *,
-	:not(.ring-2) *,
-	:not(.ring-3) *,
-	:not(.logo-c) *,
-	:not(.typed-text) * {
-		animation-duration: 0.1s !important;
-		animation-delay: 0s !important;
-		transition-duration: 0.1s !important;
-	}
-
-	/* Preserve loading screen animations */
-	.loading-screen,
-	.loading-screen *,
-	.loading-screen *::before,
-	.loading-screen *::after {
-		animation-duration: revert !important;
-		animation-delay: revert !important;
-		transition-duration: revert !important;
-	}
-
-	/* Disable background animations */
-	body::before,
-	.hero-section::before,
-	.hero-section::after {
-		animation: none !important;
-	}
-
-	/* Simplify effects */
-	.cyber-button::before,
-	.roadmap-cta::before {
-		display: none;
-	}
 
 	.sidebar-nav {
 		width: 60px;
@@ -3506,6 +3460,7 @@ html {
 }
 
 .tools-grid {
+	z-index: 50;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 2rem;
@@ -3522,6 +3477,7 @@ html {
 	border-radius: 15px;
 	padding: 2rem;
 	transition: var(--transition-smooth);
+	z-index: 50;
 }
 
 .tool-card:hover {

@@ -35,7 +35,7 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 1;
+	z-index: 5;
 }
 
 .cyber-grid {
@@ -48,6 +48,7 @@
 		linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px);
 	background-size: 40px 40px;
 	animation: gridPulse 4s ease-in-out infinite;
+	z-index: 5;
 }
 
 .gradient-overlay {
@@ -64,6 +65,7 @@
 		transparent 100%
 	);
 	animation: gradientShift 8s ease-in-out infinite alternate;
+	z-index: 5;
 }
 
 /* Content Styling */
@@ -390,17 +392,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-	/* Mobile Performance Optimizations */
-	.cyber-grid {
-		display: none; /* Remove heavy background pattern on mobile */
-	}
 
 	.gradient-overlay {
 		opacity: 0.3; /* Reduce gradient intensity */
-	}
-
-	.floating-dot {
-		animation: none !important; /* Disable floating animations */
 	}
 
 	.scroll-stack-content {

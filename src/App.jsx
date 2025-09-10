@@ -225,12 +225,10 @@ const HomePage = () => {
 					<BentoGridDemo />
 				</div>
 
-				{!isMobile && (
-					<div className="floating-elements">
-						<div className="floating-dot dot-1"></div>
-						<div className="floating-dot dot-2"></div>
-					</div>
-				)}
+				<div className="floating-elements">
+					<div className="floating-dot dot-1"></div>
+					<div className="floating-dot dot-2"></div>
+				</div>
 			</div>
 
 			{/* Events Section with Image Gallery */}
@@ -346,6 +344,27 @@ const HomePage = () => {
 							))}
 						</div>
 					</div>
+					<div className="core-members-section">
+						<h3 className="section-subtitle-small">Senior Members</h3>
+						<div className="core-members-grid">
+							{teamData.seniorMembers.map((member, index) => (
+								<div className="team-card core-card" key={index}>
+									<div className="team-image-container">
+										{/* <div className="placeholder-avatar">{member.avatar}</div> */}
+										<div className="team-image-container">
+											<img
+												src={member.image}
+												alt={member.name}
+												className="team-image"
+											/>
+										</div>
+									</div>
+									<h3 className="team-name">{member.name}</h3>
+									<div className="team-position">{member.position}</div>
+								</div>
+							))}
+						</div>
+					</div>
 
 					{/* Website Attribution */}
 					<div className="website-attribution">
@@ -377,10 +396,10 @@ const HomePage = () => {
 
 			{/* Tools Section */}
 			<div id="services" className="tools-section">
-				{/* <div className="section-background">
+				<div className="section-background">
 					<div className="cyber-grid"></div>
 					<div className="gradient-overlay"></div>
-				</div> */}
+				</div>
 
 				<div className="section-inner">
 					<h2 className="section-title">Security Tools</h2>
@@ -424,13 +443,11 @@ const HomePage = () => {
 					</div>
 				</div>
 
-				{!isMobile && (
-					<div className="floating-elements">
-						<div className="floating-dot dot-1"></div>
-						<div className="floating-dot dot-2"></div>
-						<div className="floating-dot dot-3"></div>
-					</div>
-				)}
+				<div className="floating-elements">
+					<div className="floating-dot dot-1"></div>
+					<div className="floating-dot dot-2"></div>
+					<div className="floating-dot dot-3"></div>
+				</div>
 			</div>
 
 			{/* Footer */}
