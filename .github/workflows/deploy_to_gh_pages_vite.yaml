@@ -56,7 +56,7 @@ jobs:
         run: cp dist/index.html dist/404.html
 
       - name: Add CNAME for custom domain
-        run: echo "mun.iiitnr.ac.in" > ./dist/CNAME
+        run: echo "${{ secrets.PROJECT_SUBDOMAIN }}.iiitnr.ac.in" > ./dist/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
