@@ -21,7 +21,21 @@ const LoadingScreen = ({ onComplete }) => {
 
 	const targetText = "C1PH3RC3LL";
 
+	const redirectList = [
+		{
+			path: "/join",
+			link: "https://discord.gg/ukRsasGK6h"
+		}
+	]
+
+	useEffect(()=>{
+		if (redirectList.filter(r => r.path===window.location.pathname).length) {
+			window.location.href = redirectList.filter(r => r.path===window.location.pathname)[0].link;
+		}
+	}, [])
+
 	useEffect(() => {
+		
 		const timeline = [
 			{ delay: 1500, phase: "transforming" },
 			// { delay: 3000, phase: "building" },
@@ -64,6 +78,7 @@ const LoadingScreen = ({ onComplete }) => {
 		return () => {
 			if (typingTimer) clearInterval(typingTimer);
 		};
+
 	}, [onComplete]);
 
 	return (
@@ -72,41 +87,38 @@ const LoadingScreen = ({ onComplete }) => {
 				{/* {isMobile ? (
 					<ReverseVideo />
 				) : ( */}
-					<>
-						<div className="circle-container">
-							<div
-								className={`outer-circle ${
-									phase !== "spinning" ? "stop-spin" : ""
-								}`}
-							/>
-							<div
-								className={`inner-rings ${
-									["transforming", "building", "typing", "complete"].includes(
-										phase
-									)
-										? "visible"
-										: ""
-								}`}
-							>
-								<div className="ring ring-1" />
-								<div className="ring ring-2" />
-								<div className="ring ring-3" />
-							</div>
-						</div>
-
+				<>
+					<div className="circle-container">
 						<div
-							className={`loading-dots ${
-								["transforming", "typing", "complete"].includes(phase)
-									? "hide"
+							className={`outer-circle ${phase !== "spinning" ? "stop-spin" : ""
+								}`}
+						/>
+						<div
+							className={`inner-rings ${["transforming", "building", "typing", "complete"].includes(
+								phase
+							)
+									? "visible"
 									: ""
-							}`}
+								}`}
 						>
-							<div className="dot" />
-							<div className="dot" />
-							<div className="dot" />
+							<div className="ring ring-1" />
+							<div className="ring ring-2" />
+							<div className="ring ring-3" />
 						</div>
-					</>
-				
+					</div>
+
+					<div
+						className={`loading-dots ${["transforming", "typing", "complete"].includes(phase)
+								? "hide"
+								: ""
+							}`}
+					>
+						<div className="dot" />
+						<div className="dot" />
+						<div className="dot" />
+					</div>
+				</>
+
 				{/* Circle Animation */}
 				{/* <div className="circle-container">
 					<div
@@ -133,9 +145,8 @@ const LoadingScreen = ({ onComplete }) => {
 
 				{/* Text */}
 				<div
-					className={`text-container ${
-						phase === "typing" || phase === "complete" ? "visible" : ""
-					}`}
+					className={`text-container ${phase === "typing" || phase === "complete" ? "visible" : ""
+						}`}
 				>
 					<div className="main-title">
 						{typedText}
@@ -150,13 +161,12 @@ const LoadingScreen = ({ onComplete }) => {
 
 				{/* Loading Dots */}
 				<div
-					className={`loading-dots ${
-						phase === "transforming" ||
-						phase === "typing" ||
-						phase === "complete"
+					className={`loading-dots ${phase === "transforming" ||
+							phase === "typing" ||
+							phase === "complete"
 							? "hide"
 							: ""
-					}`}
+						}`}
 				>
 					<div className="dot" />
 					<div className="dot" />

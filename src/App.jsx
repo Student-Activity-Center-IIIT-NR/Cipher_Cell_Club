@@ -18,6 +18,7 @@ import data from "./data/ctfs.json";
 import teamData from "./data/team.json";
 
 import "./style.css";
+import Redirect from "./components/Redirect.jsx";
 
 // Navigation Component
 const Navigation = () => {
@@ -637,6 +638,7 @@ const ContactPage = () => {
 // Main App Component
 const App = () => {
 	const [isLoading, setIsLoading] = useState(true);
+	// const location = useLocation();
 
 	useEffect(() => {
 		// Initialize main website functionality in the background
