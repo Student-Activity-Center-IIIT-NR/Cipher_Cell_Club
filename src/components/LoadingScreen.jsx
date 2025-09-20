@@ -23,7 +23,7 @@ const LoadingScreen = ({ onComplete }) => {
 
 	const redirectList = [
 		{
-			path: "/join",
+			path: "/join-discord",
 			link: "https://discord.gg/ukRsasGK6h"
 		}
 	]
