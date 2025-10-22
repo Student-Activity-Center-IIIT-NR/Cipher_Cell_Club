@@ -24,18 +24,25 @@ const LoadingScreen = ({ onComplete }) => {
 	const redirectList = [
 		{
 			path: "/join-discord",
-			link: "https://discord.gg/ukRsasGK6h"
-		}
-	]
-
-	useEffect(()=>{
-		if (redirectList.filter(r => r.path===window.location.pathname).length) {
-			window.location.href = redirectList.filter(r => r.path===window.location.pathname)[0].link;
-		}
-	}, [])
+			link: "https://discord.gg/ukRsasGK6h",
+		},
+		{
+			path: "/join-risein-bootcamp",
+			link: "https://www.risein.com/bootcamps/build-on-stellar-bootcamp-iiit-nr",
+		},
+	];
 
 	useEffect(() => {
-		
+		if (
+			redirectList.filter((r) => r.path === window.location.pathname).length
+		) {
+			window.location.href = redirectList.filter(
+				(r) => r.path === window.location.pathname
+			)[0].link;
+		}
+	}, []);
+
+	useEffect(() => {
 		const timeline = [
 			{ delay: 1500, phase: "transforming" },
 			// { delay: 3000, phase: "building" },
@@ -78,7 +85,6 @@ const LoadingScreen = ({ onComplete }) => {
 		return () => {
 			if (typingTimer) clearInterval(typingTimer);
 		};
-
 	}, [onComplete]);
 
 	return (
@@ -90,16 +96,18 @@ const LoadingScreen = ({ onComplete }) => {
 				<>
 					<div className="circle-container">
 						<div
-							className={`outer-circle ${phase !== "spinning" ? "stop-spin" : ""
-								}`}
+							className={`outer-circle ${
+								phase !== "spinning" ? "stop-spin" : ""
+							}`}
 						/>
 						<div
-							className={`inner-rings ${["transforming", "building", "typing", "complete"].includes(
-								phase
-							)
+							className={`inner-rings ${
+								["transforming", "building", "typing", "complete"].includes(
+									phase
+								)
 									? "visible"
 									: ""
-								}`}
+							}`}
 						>
 							<div className="ring ring-1" />
 							<div className="ring ring-2" />
@@ -108,10 +116,11 @@ const LoadingScreen = ({ onComplete }) => {
 					</div>
 
 					<div
-						className={`loading-dots ${["transforming", "typing", "complete"].includes(phase)
+						className={`loading-dots ${
+							["transforming", "typing", "complete"].includes(phase)
 								? "hide"
 								: ""
-							}`}
+						}`}
 					>
 						<div className="dot" />
 						<div className="dot" />
@@ -145,8 +154,9 @@ const LoadingScreen = ({ onComplete }) => {
 
 				{/* Text */}
 				<div
-					className={`text-container ${phase === "typing" || phase === "complete" ? "visible" : ""
-						}`}
+					className={`text-container ${
+						phase === "typing" || phase === "complete" ? "visible" : ""
+					}`}
 				>
 					<div className="main-title">
 						{typedText}
@@ -161,12 +171,13 @@ const LoadingScreen = ({ onComplete }) => {
 
 				{/* Loading Dots */}
 				<div
-					className={`loading-dots ${phase === "transforming" ||
-							phase === "typing" ||
-							phase === "complete"
+					className={`loading-dots ${
+						phase === "transforming" ||
+						phase === "typing" ||
+						phase === "complete"
 							? "hide"
 							: ""
-						}`}
+					}`}
 				>
 					<div className="dot" />
 					<div className="dot" />
