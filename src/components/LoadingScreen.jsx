@@ -26,10 +26,6 @@ const LoadingScreen = ({ onComplete }) => {
 			path: "/join-discord",
 			link: "https://discord.gg/ukRsasGK6h",
 		},
-		{
-			path: "/join-risein-bootcamp",
-			link: "https://www.risein.com/bootcamps/build-on-stellar-bootcamp-iiit-nr",
-		},
 	];
 
 	useEffect(() => {
