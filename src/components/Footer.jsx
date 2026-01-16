@@ -178,7 +178,7 @@ const Footer = () => {
 
 					<div className="footer-bottom">
 						<span className="copyright">
-							&copy; 2025 CipherCell. All Rights Reserved.
+							&copy; {new Date().getFullYear()} CipherCell. All Rights Reserved.
 						</span>
 						{/* <a href="#" className="privacy-link">
 							Privacy Policy
