@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./LoadingScreen.css";
-import ReverseVideo from "./ReverseVideo";
+// import ReverseVideo from "./ReverseVideo";
 const useIsMobile = () => {
 	const [isMobile, setIsMobile] = React.useState(window.innerWidth < 768);
 
@@ -25,6 +25,10 @@ const LoadingScreen = ({ onComplete }) => {
 		{
 			path: "/join-discord",
 			link: "https://discord.gg/ukRsasGK6h",
+		},
+		{
+			path: "/junior-team",
+			link: "https://forms.gle/RL4SooFNtixHocxX9",
 		},
 	];
 

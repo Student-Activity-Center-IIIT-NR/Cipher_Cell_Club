@@ -7,3 +7,5 @@ export default function Redirect({ href }) {
 
     return <p>Redirecting...</p>;
 }
+
+//do not need this btw

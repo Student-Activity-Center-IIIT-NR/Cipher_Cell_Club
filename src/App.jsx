@@ -18,7 +18,7 @@ import data from "./data/ctfs.json";
 import teamData from "./data/team.json";
 
 import "./style.css";
-import Redirect from "./components/Redirect.jsx";
+// import Redirect from "./components/Redirect.jsx";
 
 // Navigation Component
 const Navigation = () => {
