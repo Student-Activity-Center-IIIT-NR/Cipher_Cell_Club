@@ -26,9 +26,13 @@ const LoadingScreen = ({ onComplete }) => {
 			path: "/join-discord",
 			link: "https://discord.gg/ukRsasGK6h",
 		},
+		// {
+		// 	path: "/junior-team",
+		// 	link: "https://forms.gle/RL4SooFNtixHocxX9",
+		// },
 		{
-			path: "/junior-team",
-			link: "https://forms.gle/RL4SooFNtixHocxX9",
+			path: "/bootcamp",
+			link: "https://www.risein.com/bootcamps/into-the-midnight-bootcamp",
 		},
 	];
 
