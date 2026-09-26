@@ -1,65 +1,42 @@
 {
 	"leadership": [
 		{
-			"name": "Pranjal Pathak",
+			"name": "Bhavyaa",
 			"position": "HEAD",
-			"image": "/pranjal.jpg"
+			"image": "/Bhavyaa.jpg"
 		},
 		{
-			"name": "Atharva Bedekar",
+			"name": "Onkar",
 			"position": "VICE HEAD",
-			"image": "/atharva.jpg"
+			"image": "/Onkar.jpg"
 		}
 	],
 	"coreMembers": [
 		{
-			"name": "Mayank Dixit",
+			"name": "Harimohan",
 			"position": "CORE MEMBER",
-			"image": "/mayank.jpg"
+			"image": "/Harimohan.jpg"
 		},
 		{
-			"name": "Fahmin Mohammed K K",
+			"name": "Rudra",
 			"position": "CORE MEMBER",
-			"image": "/fahmin.jpg"
+			"image": "/Rudra.jpg"
 		},
 		{
-			"name": "Prashil Thul",
+			"name": "Shivali",
 			"position": "CORE MEMBER",
-			"image": "/prashil.png"
+			"image": "/Shivali.png"
 		},
 		{
-			"name": "Aditi Joshi",
+			"name": "Arjun",
 			"position": "CORE MEMBER",
-			"image": "/aditi.jpg"
+			"image": "/Arjun.jpg"
+		},
+		{
+			"name": "Surya",
+			"position": "CORE MEMBER",
+			"image": "/surya-narayan.jpg"
 		}
 	],
-	"seniorMembers": [
-		{
-			"name": "Chiman Esda",
-			"position": "SENIOR MEMBER",
-			"image": "/chiman.jpg"
-		},
-		{
-			"name": "Harsh Kaushik",
-			"position": "SENIOR MEMBER",
-			"image": "/harsh.jpg"
-		},
-		{
-			"name": "Janay Bhanushali",
-			"position": "SENIOR MEMBER",
-			"image": "/janay.jpg"
-		},
-		{
-			"name": "Prachi Choudhary",
-			"position": "SENIOR MEMBER",
-
-			"image": "/prachi.jpg"
-		},
-		{
-			"name": "Aksh Verma",
-			"position": "SENIOR MEMBER",
-
-			"image": "/aksh.jpg"
-		}
-	]
+	"seniorMembers": []
 }

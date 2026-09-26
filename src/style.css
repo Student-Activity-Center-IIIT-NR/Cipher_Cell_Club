@@ -3170,8 +3170,14 @@ html {
 	justify-content: center;
 	gap: 2rem;
 	flex-wrap: wrap;
-	max-width: 1400px;
+	max-width: 1050px;
 	margin: 0 auto;
+}
+
+.core-card {
+	flex: 0 1 300px;
+	width: 100%;
+	max-width: 300px;
 }
 
 .website-attribution {
@@ -3291,7 +3297,8 @@ html {
 	}
 
 	.core-members-grid {
-		grid-template-columns: 1fr;
+		flex-direction: column;
+		align-items: center;
 		gap: 1.5rem;
 	}
 
