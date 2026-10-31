@@ -111,7 +111,7 @@
 
 @media (max-width: 1024px) {
 	.workshop-gallery-section .section-inner {
-		padding-left: calc(60px+ 2rem);
+		padding-left: calc(60px + 2rem);
 		padding-right: 3rem;
 	}
 }
