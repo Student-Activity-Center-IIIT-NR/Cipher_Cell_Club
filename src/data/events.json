@@ -24,9 +24,9 @@
 		"backgroundImage": "/img/events/rise-in-event.jpg"
 	},
 	{
-		"title": "How to... scam people using blockchain ?",
-		"description": "Learn the core principles of cybersecurity and digital protection.",
-		"date": "October 16th, 2025",
-		"backgroundImage": "/img/events/how-to-blockchain-2025.jpg"
-	}
+        "title": "Cipher Cell Workshop - Introduction to Cybersecurity and Linux",
+        "description": "Different roles in cybersecurity and basic commands of linux.",
+        "date": "October 29th, 2026",
+        "backgroundImage": "/img/events/workshop-2026-10.jpg"
+    }
 ]
